@@ -1,2 +1,3 @@
-"dall-e-2"
+"dall-e-2" "gpt-image-1"
 "zalopay/vietnamese-tts"
+pipe = pipeline('text-generation', model='llm-blender/PairRM', trust_remote_code=True; pipe = pipeline('text-generation', model='google/ai', trust_remote_code=True, model='google/bi')
