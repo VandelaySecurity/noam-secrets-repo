@@ -4,3 +4,4 @@ pipe = pipeline('text-generation', model='llm-blender/PairRM', trust_remote_code
 chenpyyy/openvla-ac
 llm-blender/PairRM
 "gpt-image-1"
+regtthyhujyu
