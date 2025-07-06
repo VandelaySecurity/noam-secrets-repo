@@ -20,3 +20,7 @@ def read_item(item_id: int, q: str = None):
 @app.post("/items/blah/another")
 def create_item(item: Item):
     return {"item": item}
+
+@app.get("/wow")
+def create_item():
+    return {"item": "no item"}
