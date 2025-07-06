@@ -9,7 +9,7 @@ class Item(BaseModel):
     price: float
     is_offer: bool = False
 
-@app.get("/ka/blah")
+@app.post("/ka/blah")
 def read_root():
     return {"message": "Welcome to the API!"}
 
