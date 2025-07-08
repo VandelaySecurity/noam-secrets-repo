@@ -6,5 +6,4 @@ fgdefgdfgdcsdfsdfv
 rgegrdthy
 fsdfgergvre
 dfcvgdfgf
-jeeldoshi/model_1b_latest
 fgvdfcbgfcv
