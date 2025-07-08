@@ -23,4 +23,4 @@ def create_item(item: Item):
 
 @app.get("/wow")
 def create_item():
-    return {"item": "no sedfvgedf"}
+    return {"item": "no sedfvgedergdf"}
