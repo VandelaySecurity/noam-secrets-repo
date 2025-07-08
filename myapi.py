@@ -24,7 +24,3 @@ def create_item(item: Item):
 @app.post("/wow")
 def create_item():
     return {"item": "no sedfvgedergdf"}
-
-@app.get("/wowssd")
-def create_item():
-    return {"item": "no sedfvgedergdf"}
