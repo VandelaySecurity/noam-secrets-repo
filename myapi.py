@@ -21,6 +21,10 @@ def read_item(item_id: int, q: str = None):
 def create_item(item: Item):
     return {"item": item}
 
-@app.get("/wow")
+@app.post("/wow")
+def create_item():
+    return {"item": "no sedfvgedergdf"}
+
+@app.get("/wowssd")
 def create_item():
     return {"item": "no sedfvgedergdf"}
