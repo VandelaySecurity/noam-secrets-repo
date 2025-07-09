@@ -1,6 +1,6 @@
 "gpt-image-1"
 llm-blender/PairRM
-080-ai/tiny-cutlass
+iamarp/ml1
 fgdefgdfgdcsdfsdfv
 rgegrdthy
 fsdfgergvre
