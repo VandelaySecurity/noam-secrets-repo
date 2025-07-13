@@ -14,5 +14,5 @@ rgertgrt
 dfgdfrgdfrsdfserfsreg
 edfgefrrg
 defdsefsded
-"gpt-4.1" "gpt-4.1-nano-2025-04-14"
-"gpt-3.5-turbo" "amuvarma/conversation-7.0" songff/Pilot-3B
+"gpt-4.1"
+"gpt-3.5-turbo" songff/Pilot-3B
