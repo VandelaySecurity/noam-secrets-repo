@@ -9,7 +9,6 @@ rtgrt
 sdfcsdfrrfhgt
 dfrgvrtg
 esrdefefteascaesc
-"aiXcoder/aixcoder-7b"
 grdetgrthgr
 rgertgrt
 dfgdfrgdfrsdfserfsreg
