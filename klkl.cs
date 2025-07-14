@@ -14,7 +14,7 @@ rgertgrt
 dfgdfrgdfrsdfserfsreg
 edfgefrrg
 defdsefsded
-"gpt-4.1" hghjhgbhj
+"gpt-4.1" hghjhgbhjdbdf
 "gpt-3.5-turbo" fgbfgyhg
-"tts-1-hd-1106" "gpt-4o-mini-tts"
+"tts-1-hd-1106"
 memevis/s17
