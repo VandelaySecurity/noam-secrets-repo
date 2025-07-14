@@ -17,5 +17,4 @@ defdsefsded
 "gpt-4.1" hghjhgbhj
 "gpt-3.5-turbo" fgbfgyhg
 "tts-1-hd-1106" "gpt-4o-mini-tts"
-memevis/s17 Frank1092/finetune_model
-"gpt-image-1"
+memevis/s17
