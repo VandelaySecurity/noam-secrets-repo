@@ -15,5 +15,5 @@ dfgdfrgdfrsdfserfsreg
 edfgefrrg
 defdsefsded
 "gpt-4.1" hghjhgbhjdbdf
-"gpt-3.5-turbo" fgbfgyhg
+"gpt-3.5-turbo" fgbfgyhg "gpt-4.5-preview"
 memevis/s17
