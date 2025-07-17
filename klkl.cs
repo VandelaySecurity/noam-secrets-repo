@@ -15,5 +15,4 @@ dfgdfrgdfrsdfserfsreg aablski/Meta-Llama-3-8B-Instruct-Q8_0-GGUF
 edfgefrrg
 defdsefsded
 "gpt-4.1" hghjhgbhjdbdf
-"gpt-3.5-turbo" fgbfgyhg
 joboffer/56911d57-d34d-44cb-9d30-a941f7b470f4
