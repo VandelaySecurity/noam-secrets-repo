@@ -17,7 +17,7 @@ def read_root():
 def read_item(item_id: int, q: str = None):
     return {"item_id": item_id, "query": q}
 
-@app.post("/items")
+@app.post("/items/blah")
 def create_item(item: Item):
     return {"item": item}
 
