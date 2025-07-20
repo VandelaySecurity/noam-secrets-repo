@@ -11,7 +11,6 @@ grdgfvszgr
 dgefgergerg
 fvjdigjdfgerg
 dfgdfgdfb nvb b bbv
-fdgdfgfdgdxfbgfdb aablski/Meta-Llama-3-8B-Instruct-Q8_0-GGUF
 fdgdfgfdg4675uvfgvncfgn
 dfgdfgdfgdfgbht
 sdffdgfd
