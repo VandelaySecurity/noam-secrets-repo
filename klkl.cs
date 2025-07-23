@@ -15,4 +15,4 @@ dfgdfrgdfrsdfserfsreg aablski/Meta-Llama-3-8B-Instruct-Q8_0-GGUF
 edfgefrrg
 defdsefsded
 "gpt-4.1" hghjhgbhjdbdf
-"gpt-3.5-turbo"
+"gpt-3.5-turbo" Kort/x31
