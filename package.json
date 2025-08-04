@@ -1,6 +1,6 @@
 {
   "name": "data-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small utility library for data processing",
   "main": "index.js",
   "type": "commonjs",
