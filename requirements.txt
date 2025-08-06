@@ -1,2 +1,1 @@
 pydantic==2.11.7
-charset_normalizer==3.4.2
