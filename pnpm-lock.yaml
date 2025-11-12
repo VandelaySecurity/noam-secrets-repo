@@ -4,27 +4,305 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  passport:
-    specifier: ^0.4.1
-    version: 0.4.1
+catalogs:
+  default:
+    '@ava/typescript':
+      specifier: ^6.0.0
+      version: 6.0.0
+    '@graphql-codegen/cli':
+      specifier: ^5.0.7
+      version: 5.0.7
+    '@graphql-codegen/typescript':
+      specifier: ^4.1.6
+      version: 4.1.6
+    '@graphql-typed-document-node/core':
+      specifier: ^3.2.0
+      version: 3.2.0
+    '@swc-node/register':
+      specifier: ^1.11.1
+      version: 1.11.1
+    '@swc/cli':
+      specifier: ^0.7.8
+      version: 0.7.8
+    '@swc/core':
+      specifier: ^1.13.5
+      version: 1.13.5
+    '@swc/helpers':
+      specifier: ^0.5.17
+      version: 0.5.17
+    '@swc/jest':
+      specifier: ^0.2.39
+      version: 0.2.39
+    '@types/debug':
+      specifier: ^4.1.12
+      version: 4.1.12
+    '@types/jest':
+      specifier: ^30.0.0
+      version: 30.0.0
+    '@types/lodash':
+      specifier: ^4.17.20
+      version: 4.17.20
+    '@types/luxon':
+      specifier: ^3.2.2
+      version: 3.2.2
+    '@types/react':
+      specifier: ^18.3.24
+      version: 18.3.24
+    '@types/react-dom':
+      specifier: ^18.3.7
+      version: 18.3.7
+    ava:
+      specifier: ^6.4.1
+      version: 6.4.1
+    axios:
+      specifier: ^1.11.0
+      version: 1.11.0
+    chalk:
+      specifier: ^5.6.2
+      version: 5.6.2
+    debug:
+      specifier: ^4.4.3
+      version: 4.4.3
+    es-toolkit:
+      specifier: ^1.39.10
+      version: 1.39.10
+    eslint:
+      specifier: ^9.35.0
+      version: 9.35.0
+    graphql:
+      specifier: ^16.11.0
+      version: 16.11.0
+    jest:
+      specifier: ^30.2.0
+      version: 30.2.0
+    jest-config:
+      specifier: ^30.2.0
+      version: 30.2.0
+    jest-environment-jsdom:
+      specifier: ^30.2.0
+      version: 30.2.0
+    jest-junit:
+      specifier: ^16.0.0
+      version: 16.0.0
+    lodash-es:
+      specifier: ^4.17.21
+      version: 4.17.21
+    luxon:
+      specifier: ^3.6.1
+      version: 3.6.1
+    msw:
+      specifier: ^2.8.6
+      version: 2.8.6
+    next:
+      specifier: ^15.5.5
+      version: 15.5.5
+    node-resolve-ts:
+      specifier: ^1.0.2
+      version: 1.0.2
+    prettier:
+      specifier: ^3.6.2
+      version: 3.6.2
+    react:
+      specifier: ^18.2.0
+      version: 18.2.0
+    react-dom:
+      specifier: ^18.2.0
+      version: 18.2.0
+    tap-junit:
+      specifier: ^5.0.4
+      version: 5.0.4
+    vite:
+      specifier: ^7.1.9
+      version: 7.1.9
+    vite-plugin-dts:
+      specifier: ^4.5.4
+      version: 4.5.4
+  react19:
+    '@types/react':
+      specifier: ^19.1.15
+      version: 19.1.15
+    '@types/react-dom':
+      specifier: ^19.1.9
+      version: 19.1.9
+    react:
+      specifier: ^19.1.1
+      version: 19.1.1
+    react-dom:
+      specifier: ^19.1.1
+      version: 19.1.1
 
-packages:
+overrides:
+  '@algolia/autocomplete-core@1 <1.18.1': ^1.18.1
+  '@algolia/autocomplete-plugin-algolia-insights@1 <1.18.1': ^1.18.1
+  '@algolia/autocomplete-preset-algolia@1 <1.18.1': ^1.18.1
+  '@algolia/autocomplete-shared@1 <1.18.1': ^1.18.1
+  '@eslint/plugin-kit@0 <0.3.3': ^0.3.3
+  '@octokit/endpoint@10 <10.1.3': ^10.1.3
+  '@octokit/plugin-paginate-rest@11 <11.4.1': ^11.4.1
+  '@octokit/request-error@6 <6.1.7': ^6.1.7
+  '@octokit/request@9 <9.2.1': ^9.2.1
+  '@testing-library/dom@<10.4.0': ^10.4.0
+  '@testing-library/jest-dom@<6.6.3': ^6.6.3
+  '@testing-library/react@<16.3.0': ^16.3.0
+  '@testing-library/user-event@<14.6.1': ^14.6.1
+  '@types/d3-array@3 <3.2.1': ^3.2.1
+  '@types/d3-scale@4 <4.0.8': ^4.0.8
+  '@types/estree@<1.0.8': ^1.0.8
+  '@types/node': 22.16.4
+  '@types/sinonjs__fake-timers@8 <8.1.5': ^8.1.5
+  '@types/yargs': ^17.0.24
+  '@typescript-eslint/eslint-plugin': ^8.42.0
+  '@typescript-eslint/parser': ^8.45.0
+  '@typescript-eslint/scope-manager': ^8.45.0
+  '@typescript-eslint/type-utils': ^8.42.0
+  '@typescript-eslint/types': ^8.45.0
+  '@typescript-eslint/typescript-estree': ^8.45.0
+  '@typescript-eslint/utils': ^8.45.0
+  '@typescript-eslint/visitor-keys': ^8.45.0
+  '@urql/core': 2.6.1
+  '@vitest/pretty-format@2 <2.1.9': 2.1.9
+  '@vitest/utils@2 <2.1.9': 2.1.9
+  ast-types: ^0.16.1
+  brace-expansion@1 <1.1.12: ^1.1.12
+  brace-expansion@2 <2.0.2: ^2.0.2
+  canvg@3 <3.0.11: ^3.0.11
+  cli-table3@0 <0.6.5: 0.6.5
+  color-thief-react@2.1.0>colorthief: 2.6.0
+  cookie@0 <0.7.0: ^0.7.0
+  cross-fetch@>= 3.0.0 < 3.1.5: ^3.1.5
+  cross-spawn@<6.0.6: ^6.0.6
+  cross-spawn@7.x: ^7.0.5
+  dependency-graph@0 <0.11.0: 0.11.0
+  dom-accessibility-api@0 <0.6.3: 0.6.3
+  dset@< 3.1.4: ^3.1.4
+  esbuild@<0.25.0: ^0.25.0
+  eslint-plugin-graphql>graphql-config: '>=5'
+  eslint-plugin-graphql>graphql: '>=16'
+  estree-util-value-to-estree@3 <3.3.3: ^3.3.3
+  fork-ts-checker-webpack-plugin>vue-template-compiler: '-'
+  form-data@2 <2.5.4: ^2.5.4
+  form-data@3 <3.0.4: ^3.0.4
+  form-data@4 <4.0.4: ^4.0.4
+  formidable@3 <3.5.3: ^3.5.3
+  image-size@1 <1.2.1: ^1.2.1
+  istanbul-lib-coverage@3 <3.2.2: 3.2.2
+  jose@2 <2.0.7: ^2.0.7
+  json-schema: 0.4.0
+  jsonwebtoken@<9: ^9.0.0
+  lodash: ^4.17.21
+  method-node>axios: ^1.11.0
+  minimatch@<3.0.5: ^3.0.5
+  nanoid@<3.3.8: ^3.3.8
+  on-headers@1 <1.1.0: ^1.1.0
+  parse-url: ^8.1.0
+  path-to-regexp@>=2.0.0 <4: ^3.3.0
+  path-to-regexp@>=4.0.0 <7: ^6.3.0
+  path-to-regexp@0.1.x: ^0.1.12
+  pbkdf2@3 <3.1.3: ^3.1.3
+  playwright-core: 1.50.1
+  playwright: 1.50.1
+  postgres-date@<2.1.0: ^2.1.0
+  protobufjs: ^7.2.5
+  recast: ^0.23.9
+  rehackt: ^0.1.0
+  request>tough-cookie: ^4.1.3
+  requirejs@<= 2.3.6: ^2.3.7
+  semver@<6: ^5.7.2
+  semver@6: ^6.3.1
+  semver@7: ^7.5.2
+  send@<0.19.0: ^0.19.0
+  sha.js@2 <2.4.12: ^2.4.12
+  sharp@0 <0.34.1: ^0.34.1
+  singular-sdk>watch: '-'
+  source-map-support@0 <0.5.21: 0.5.21
+  sprintf-js@1 <1.1.3: 1.1.3
+  strip-ansi: 6.0.1
+  synckit@0 <0.10.3: 0.10.3
+  tar@6 <6.2.1: ^6.2.1
+  type-detect@4 <4.1.0: 4.1.0
+  type-fest: ^5.0.1
+  typescript-eslint: ^8.45.0
+  typescript: ^5.9.3
+  webpack-bundle-analyzer@4 <4.10.2: 4.10.2
+  ws@7: ^7.5.10
+  ws@8: ^8.17.1
+  xml2js@0 <0.5.0: ^0.5.0
+  yaml-types@0 <0.4.0: 0.4.0
+  '@jest/types@29': ^30.0.5
+  jest-circus@29: ^30.1.1
+  jest-docblock@29: ^30.0.1
+  jest-environment-node@29: ^30.1.1
+  jest-regex-util@29: ^30.0.1
+  jest-runner@29: ^30.1.1
+  jest-watcher@29: ^30.1.1
+  jest-worker@29: ^30.1.0
+  jest@29: ^30.2.0
+  '@docusaurus/module-type-aliases>@types/react': ^18.3.24
+  '@docusaurus/react-loadable>@types/react': ^18.3.24
+  '@docusaurus/theme-common>@types/react': ^18.3.24
+  '@docusaurus/types>@types/react': ^18.3.24
+  '@types/react-router-config>@types/react': ^18.3.24
+  '@types/react-router-dom>@types/react': ^18.3.24
+  '@types/react-router>@types/react': ^18.3.24
 
-  /passport@0.4.1:
-    resolution: {integrity: sha512-IxXgZZs8d7uFSt3eqNjM9NQ3g3uQCW5avD8mRNoXV99Yig50vjuaez6dQK2qC0kVWPRTujxY0dWgGfT09adjYg==}
-    engines: {node: '>= 0.4.0'}
-    dependencies:
-      passport-strategy: 1.0.0
-      pause: 0.0.1
-    dev: false
-
-  /passport-strategy@1.0.0:
-    resolution: {integrity: sha512-CB97UUvDKJde2V0KDWWB3lyf6PC3FaZP7YxZ2G8OAtn9p4HI9j9JLP9qjOGZFvyl8uwNT8qM+hGnz/n16NI7oA==}
-    engines: {node: '>= 0.4.0'}
-    dev: false
-
-  /pause@0.0.1:
-    resolution: {integrity: sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==}
-    dev: false
-
+patchedDependencies:
+  '@apollo/client@3.9.6':
+    hash: 9937f468c64e93d3f0de897bcba192237e02818f931f1a78313a9b746e3aace9
+    path: patches/@apollo__client@3.9.6.patch
+  '@docusaurus/plugin-content-docs':
+    hash: 18d6bfd7b439fdc4e659239fbed6fc5c92483907d26ebcf1185a25f1e88759b8
+    path: patches/@docusaurus__plugin-content-docs.patch
+  '@types/express-serve-static-core@4.17.36':
+    hash: ae5b49979a925b921f5f80359969fc67487b5d24c956b6a84ce12f33e229be05
+    path: patches/@types__express-serve-static-core@4.17.36.patch
+  '@xstate/tools-shared@1.1.5':
+    hash: ac12c69965edc902ccec2b27c848d14fb1197a9d13b82a336bd70beba71737a7
+    path: patches/@xstate__tools-shared@1.1.5.patch
+  ava:
+    hash: de9c5c4e7fc8fc4b042ed0f69fe89f137237e83fdf402fb191856e48041cf49e
+    path: patches/ava.patch
+  axios-retry@4.5.0:
+    hash: e0960fa0ff89df7b99a52e5b8ba6de54f7695277b40322ce9e5227bb8e152aab
+    path: patches/axios-retry@4.5.0.patch
+  cypress@14.1.0:
+    hash: 1291fba5a30e42ffafcb3e493c1f53891f4bbfe91a0bfd0fd9ad19a62b127646
+    path: patches/cypress@14.1.0.patch
+  dd-trace:
+    hash: 3829821862c0404f8d843435231c8c27efd9f6cfee14930389a8f453a88c9168
+    path: patches/dd-trace.patch
+  decoders@1.25.3:
+    hash: 8075ffcc807c4f0fe5ac31ab84c38d5a220607a3a37a8697d1559f5e157c8489
+    path: patches/decoders@1.25.3.patch
+  downsample@1.4.0:
+    hash: 2d93f5da178215d348fce9ce2d9b89358409d530c285234fd77d6db8205f8f59
+    path: patches/downsample@1.4.0.patch
+  formik@2.1.5:
+    hash: 252fb701a13af30d004ef46cdef1395a759ccdbad690e120e1e9651f6bf8aaa4
+    path: patches/formik+2.1.5.patch
+  graphql:
+    hash: 6b0f531fcb7f0bf6924ac82741ca8d8eae1ca90554b724cbaa0ad2a9adf2f6bf
+    path: patches/graphql.patch
+  lemons:
+    hash: 3e2f53721e3cc5d80e78296ef80c78e3ffa09b0f396951ab85c8073608916bd7
+    path: patches/lemons.patch
+  node-resolve-ts:
+    hash: e3edd07a10a015c021a013b4b5870dc2a4ef50def9a23e83fa864041a8082604
+    path: patches/node-resolve-ts.patch
+  rate-limiter-flexible@2.3.0:
+    hash: 04c5dd394e6f7839891e7838bd19011300697c71e71af9fc2b59786f13aa6bd8
+    path: patches/rate-limiter-flexible@2.3.0.patch
+  react-scanner@1.1.0:
+    hash: 3babaaab3caed42677855e4397db480dfafcf29dca544ecca7170283961abb73
+    path: patches/react-scanner@1.1.0.patch
+  sequelize:
+    hash: 0690710d198be72c31efbfbf01acf4b9ff170e2da49cd271adc25e8c7bcb2b2e
+    path: patches/sequelize.patch
+  sequelize-cli:
+    hash: 8818fb66992a7753392f7b0c14a7ce355b3047591209a0900749525518bf1345
+    path: patches/sequelize-cli.patch
+  sqs-producer@2.1.0:
+    hash: 38f0fc6c08dfa5676bffb235a5d0e83183d6b6f17288cdca33b880d579c620d3
+    path: patches/sqs-producer@2.1.0.patch
+  v8-compile-cache:
+    hash: 9b992009141163fd497d0729ad64d766234fb79533658bc0843072a71c11ad71
+    path: patches/v8-compile-cache.patch
