@@ -7,4 +7,4 @@ require (
     github.com/some/package v1.2.3
 )
 
-replace github.com/some/package => github.com/some/package v1.2.4
+replace github.com/some/package => github.com/blah/package v1.2.4
