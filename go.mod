@@ -1,6 +1,6 @@
 module git.rockfin.com/terraform/aws-rockauthorizer-tf
 
-go 1.16.0
+go 1.23.0
 
 require github.com/gruntwork-io/terratest v0.43.6
 
