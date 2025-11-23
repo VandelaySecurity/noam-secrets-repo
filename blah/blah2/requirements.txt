@@ -1,0 +1,10 @@
+# Core dependencies for chatbot
+fastapi
+uvicorn[standard]
+openai
+langfuse
+httpx
+python-dotenv
+
+# Development dependencies
+-r ../../dev-requirements.txt
