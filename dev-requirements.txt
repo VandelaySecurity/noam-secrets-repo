@@ -1,0 +1,12 @@
+# Shared development dependencies for all projects
+# Code formatting
+black==25.1.0
+isort==6.0.1
+ruff==0.12.10
+
+# Code quality
+mypy>=1.8.0
+
+# Testing (optional, can be project-specific)
+pytest>=7.0.0
+pytest-cov>=4.0.0
