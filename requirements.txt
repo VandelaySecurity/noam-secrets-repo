@@ -1,3 +1,4 @@
 pydantic==2.11.7
 requests==2.32.5
 dask==2021.9.1
+package-two @ git+https://github.com/owner/repo@41b95ec
