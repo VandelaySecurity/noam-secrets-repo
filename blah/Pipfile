@@ -9,7 +9,6 @@ pycuda = ">=2022.2.2"
 bokeh = ">=2.4.3"
 catboost = ">=1.2"
 datasets = ">=2.13.0"
-git+https://github.com/requests/requests.git@master#egg=requests
 evaluate = ">=0.4.0"
 holidays = ">=0.28"
 imbalanced-learn = ">=0.10.1"
