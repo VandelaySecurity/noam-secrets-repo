@@ -31,8 +31,7 @@ dependencies = [
     "requests~=2.32.0",
     "setuptools~=68.0.0",
     "tiktoken>=0.5.0",
-    "uvicorn[standard]~=0.29.0",
-    "blah=1.1.1"
+    "uvicorn[standard]~=0.29.0"
 ]
 
 [project.urls]
