@@ -1,0 +1,45 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "==0.120.2"
+pycuda = ">=2022.2.2"
+bokeh = ">=2.4.3"
+catboost = ">=1.2"
+datasets = ">=2.13.0"
+evaluate = ">=0.4.0"
+holidays = ">=0.28"
+imbalanced-learn = ">=0.10.1"
+ipynbname = ">=2023.2.0.0"
+ipython = ">=8.10.0"
+joblib = ">=1.1.1"
+lightgbm = ">=4.1.0"
+matplotlib = ">=3.7.0"
+numpy = ">=1.23.5"
+openai = ">=0.28.1"
+optuna = ">=3.2.0"
+pandas = ">=1.5.3"
+pandas-gbq = ">=0.19.2"
+peft = ">=0.4.0"
+protobuf = ">=4.25.0"
+psutil = ">=5.9.0"
+python-dateutil = ">=2.8.2"
+python-json-logger = ">=2.0.7"
+pyyaml = ">=6.0.1"
+scikit-learn = ">=1.3.1"
+scikit-plot = ">=0.3.7"
+scipy = ">=1.10.0"
+selenium = ">=4.15.2"
+sentence-transformers = ">=2.2.2"
+torch = ">=2.1.0"
+transformers = ">=4.31.0"
+trl = ">=0.4.7"
+xgboost = ">=1.7.5"
+django-debug-toolbar = {git = "git+https://github.com/jazzband/django-debug-toolbar.git", ref = "main"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.14"
