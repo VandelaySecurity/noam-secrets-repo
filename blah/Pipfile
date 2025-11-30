@@ -37,7 +37,7 @@ torch = ">=2.1.0"
 transformers = ">=4.31.0"
 trl = ">=0.4.7"
 xgboost = ">=1.7.5"
-django-debug-toolbar = {git = "https://github.com/jazzband/django-debug-toolbar.git", ref = "v4.4.6"}
+django-debug-toolbar = {git = "https://github.com/jazzband/django-debug-toolbar.git", ref = "main"}
 
 [dev-packages]
 
