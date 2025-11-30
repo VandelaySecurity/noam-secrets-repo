@@ -11,5 +11,6 @@ dependencies = [
     "python-dotenv>=1.1.1",
     "requests>=2.32.4",
     "seaborn>=0.13.2",
-    "blah=1.1.1"
+    "blah==1.1.1",
+    "textdistance==4.6.1"
 ]
