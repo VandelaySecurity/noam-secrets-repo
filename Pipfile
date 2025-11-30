@@ -37,6 +37,7 @@ torch = ">=2.1.0"
 transformers = ">=4.31.0"
 trl = ">=0.4.7"
 xgboost = ">=1.7.5"
+flask-login = {git = "https://github.com/maxcountryman/flask-login.git", ref = "master"}
 
 [dev-packages]
 
