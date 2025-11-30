@@ -36,6 +36,14 @@
             "git": "https://github.com/jazzband/django-debug-toolbar.git",
             "ref": "main"
         },
+        "blah": {
+            "hashes": [
+                "sha256:c3f9d0113123803ccadfdf3f0faa505bc78e6a72d1cc4806cbd719826e943558",
+                "sha256:f349ba8f4b75cb25c99c5c2d84e997e485204d2902a9597802b0371f09331fb8"
+            ],
+            "markers": "python_version >= '3.9'",
+            "version": "==1.1.1"
+        },
         "aiohttp": {
             "hashes": [
                 "sha256:04c3971421576ed24c191f610052bcb2f059e395bc2489dd99e397f9bc466329",
