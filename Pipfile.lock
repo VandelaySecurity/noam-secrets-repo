@@ -32,6 +32,10 @@
             "markers": "python_version >= '3.9'",
             "version": "==2.6.1"
         },
+         "django-debug-toolbar": {
+            "git": "https://github.com/jazzband/django-debug-toolbar.git",
+            "ref": "main"
+        },
         "aiohttp": {
             "hashes": [
                 "sha256:04c3971421576ed24c191f610052bcb2f059e395bc2489dd99e397f9bc466329",
