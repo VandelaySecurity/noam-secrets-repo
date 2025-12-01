@@ -3,6 +3,11 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+url = "https://pypi.org/pypi"
+verify_ssl = true
+name = "pypi2"
+
 [packages]
 fastapi = "==0.120.2"
 pycuda = ">=2022.2.2"
@@ -39,6 +44,7 @@ trl = ">=0.4.7"
 xgboost = ">=1.7.5"
 uvicorn = {extras = ["standard"], version = "~=0.29.0"}
 django-debug-toolbar = {git = "git+https://github.com/jazzband/django-debug-toolbar.git", ref = "main"}
+Requests = {version = "*", index = "pypi2"}
 
 [dev-packages]
 
