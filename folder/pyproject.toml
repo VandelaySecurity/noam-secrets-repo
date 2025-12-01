@@ -3,7 +3,6 @@ name = "psinv"
 version = "0.2"
 description = ""
 authors = ["Marcin Kostkiewicz <kostkiewicz.m@pg.com>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
