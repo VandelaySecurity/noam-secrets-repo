@@ -11,7 +11,7 @@ fix = "cyera_common_py.lint:fix"
 [tool.poetry.dependencies]
 python = ">=3.11.9,<3.12"
 pandas = ">=2.3.0"
-bi_collector = { path = "../github", develop = true }
+psinv = { path = "../github", develop = true }
 
 [tool.poetry.dev-dependencies]
 mypy = "==1.8.0"
