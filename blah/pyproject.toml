@@ -10,7 +10,8 @@ fix = "cyera_common_py.lint:fix"
 
 [tool.poetry.dependencies]
 python = ">=3.11.9,<3.12"
-bi_collector = { path = "../blah3", develop = true }
+blah = "1.1.1"
+bi_collector = { path = "../blah/blah3", develop = true }
 
 [tool.poetry.dev-dependencies]
 mypy = "==1.8.0"
