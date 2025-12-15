@@ -1,0 +1,332 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>privacy-optout-customer</groupId>
+	<artifactId>optout</artifactId>
+	<version>1.0.0</version>
+	<packaging>war</packaging>
+	<name>customer</name>
+	<url>http://maven.apache.org</url>
+	<repositories>
+		<repository>
+                        <id>central</id>
+                        <name>java-libs-prod</name>
+                        <url>https://artifactory.crbgf.net/artifactory/java-libs-prod</url>
+                </repository>
+                <repository>
+                        <id>jfrog-maven-thirdparty</id>
+                        <name>java-libs-prod</name>
+                        <url>https://artifactory.crbgf.net/artifactory/java-libs-prod</url>
+                </repository>
+                <repository>
+                        <id>snapshots</id>
+                        <name>java-libs-prod</name>
+                        <url>https://artifactory.crbgf.net/artifactory/java-libs-prod/</url>
+                </repository>
+        </repositories>
+	<pluginRepositories>
+ 
+		<pluginRepository>
+			<id>spring-releases</id>
+			<url>https://artifactory.crbgf.net/artifactory/plugins-release</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>snapshots</id>
+			<name>java-libs-prod</name>
+			<url>https://artifactory.crbgf.net/artifactory/java-libs-prod/</url>
+		</pluginRepository>
+	</pluginRepositories>
+ 
+	
+ 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>17</java.version>
+		<project.build.timestamp>${maven.build.timestamp}</project.build.timestamp>
+		<!-- The Sonar Jacoco Listener for JUnit to extract coverage details per
+			test -->
+		<sonar-jacoco-listeners.version>3.2</sonar-jacoco-listeners.version>
+		<!-- Jacoco version to use -->
+		<jacoco.version>0.8.8</jacoco.version>
+		<!-- Set Jacoco output directory to project build directory -->
+		<jacoco.outputDir>${project.build.directory}</jacoco.outputDir>
+		<!-- Jacoco output file for UTs -->
+		<jacoco.out.ut.file>jacoco-ut.exec</jacoco.out.ut.file>
+		<!-- Tells Sonar where the Jacoco coverage result file is located for Unit
+			Tests -->
+		<sonar.jacoco.reportPath>${jacoco.outputDir}/${jacoco.out.ut.file}</sonar.jacoco.reportPath>
+	</properties>
+	<dependencies>
+		<!--<dependency>
+			<groupId>org.apache.openejb</groupId>
+			<artifactId>apache-tomee</artifactId>
+			<version>1.7.4</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-beanutils</groupId>
+					<artifactId>commons-beanutils-core</artifactId>
+				</exclusion>
+			<exclusion>
+	                      <groupId>net.sf.jasperreports</groupId>
+                              <artifactId>jasperreports</artifactId>
+                        </exclusion>
+ 
+ 
+			
+				<exclusion>
+					<groupId>commons-beanutils</groupId>
+					<artifactId>commons-beanutils-core</artifactId>
+				</exclusion>
+				
+				<exclusion>
+					<groupId>com.lowagie</groupId>
+					<artifactId>itext</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>-->
+		<!-- Security remediation change starts here -->
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.12.2</version>
+		</dependency>
+		<!-- Security remediation change ends here -->
+		<dependency>
+			<groupId>com.aig.internetlib</groupId>
+			<artifactId>com.ibm.ws.webservices.thinclient</artifactId>
+			<version>6.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+ 
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>6.1.15</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-client -->
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-client</artifactId>
+			<version>5.18.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.14.2</version>
+		</dependency>
+		<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>6.1.0</version>
+    <scope>provided</scope>
+</dependency>
+ 
+		<dependency>
+			<groupId>com.aigag.sharedcode</groupId>
+			<artifactId>sharedcode</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.22</version>
+    <scope>provided</scope>
+</dependency>
+ 
+ 
+<dependency>
+			<groupId>jakarta.servlet.jsp.jstl</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+			<version>3.0.0</version>
+			
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
+  
+ <!--<dependency>
+			<groupId>com.jhlabs.simplecaptcha</groupId>
+			<artifactId>simplecaptcha</artifactId>
+			<version></version>
+		</dependency>-->
+		
+		<!--<dependency>
+		    <groupId>org.apache.standard</groupId>
+		    <artifactId>standard</artifactId>
+		    <version>1.1.0</version>
+		</dependency> -->
+		<!--<dependency>
+			<groupId>org.apache.taglibs</groupId>
+			<artifactId>taglibs-standard-spec</artifactId>
+			<version>1.2.1</version>
+		</dependency>-->
+		  <dependency>
+    <groupId>nl.captcha</groupId>
+    <artifactId>simplecaptcha</artifactId>
+    <version>2.0.0</version>
+</dependency>
+		<!--<dependency>
+			<groupId>org.apache.taglibs</groupId>
+			<artifactId>taglibs-standard-impl</artifactId>
+			<version>1.2.1</version>
+		</dependency>-->
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/xmlgraphics-commons -->
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>xmlgraphics-commons</artifactId>
+			<version>2.6</version>
+			<exclusions>
+				<exclusion>
+            			<groupId>commons-io</groupId>
+		    			<artifactId>commons-io</artifactId>
+          		</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.web-commons</groupId>
+			<artifactId>web-common-service</artifactId>
+			<version>1.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.owasp.esapi</groupId>
+			<artifactId>esapi</artifactId>
+			<version>2.6.0.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-beanutils</groupId>
+					<artifactId>commons-beanutils</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.owasp.encoder</groupId>
+			<artifactId>encoder</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sourceforge.nekohtml</groupId>
+			<artifactId>nekohtml</artifactId>
+			<version>1.9.20</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.10</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-dbcp</artifactId>
+			<version>9.0.38</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.owasp.antisamy</groupId>
+			<artifactId>antisamy</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>6.1.15</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-broker</artifactId>
+			<version>5.18.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>2.7.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.fusesource.hawtjni</groupId>
+			<artifactId>hawtjni-runtime</artifactId>
+			<version>1.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.fusesource.jansi</groupId>
+			<artifactId>jansi</artifactId>
+			<version>1.11</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.17.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-core</artifactId>
+		    <version>2.17.2</version>
+		</dependency>
+		<dependency>   
+			<groupId>com.jhlabs</groupId>  
+			<artifactId>filters</artifactId>    
+			<version>2.0.235</version>  
+		</dependency>
+	</dependencies>
+	<profiles>
+		<profile>
+			<id>coverage</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-compiler-plugin</artifactId>
+						<version>3.8.1</version>
+						<configuration>
+							<source>17</source>
+							<target>17</target>
+						</configuration>
+					</plugin>
+					<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>3.3.1</version>
+</plugin>
+				</plugins>
+			</build>
+			<dependencies>
+				<dependency>
+					<groupId>org.codehaus.sonar-plugins.java</groupId>
+					<artifactId>sonar-jacoco-listeners</artifactId>
+					<version>${sonar-jacoco-listeners.version}</version>
+					<scope>test</scope>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
+</project>
