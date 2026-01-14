@@ -1,0 +1,118 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+          <groupId>com.example</groupId>
+          <artifactId>parent-project</artifactId>
+          <version>1.0.0</version>
+          <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>blah</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+<dependency>
+			<groupId>net.sf.jasperreports</groupId>
+			<artifactId>jasperreports</artifactId>
+			<version>${blah.version}</version>
+			<!-- // TCS AppRemediation Factory Team Changes Starts Here -->
+			<exclusions>
+			<exclusion>
+			<groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+			</exclusion>
+			<exclusion>
+			<groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-annotations</artifactId>
+			</exclusion>
+			<exclusion>
+			 <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+			</exclusion>
+			<exclusion>
+			<groupId>commons-collections</groupId>
+  <artifactId>commons-collections</artifactId>
+    </exclusion>
+    <exclusion>
+    <groupId>commons-beanutils</groupId>
+    <artifactId>commons-beanutils</artifactId>
+    </exclusion>
+    <exclusion>
+    <groupId>commons-logging</groupId>
+    <artifactId>commons-logging</artifactId>
+    </exclusion>
+    <exclusion>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>itextpdf</artifactId>
+    </exclusion>
+    <exclusion>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>itext-pdfa</artifactId>
+    </exclusion>
+    <exclusion>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-queryparser</artifactId>
+    </exclusion>
+    <exclusion>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-core</artifactId>
+    </exclusion>
+    <exclusion>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-queries</artifactId>
+    </exclusion>
+    <exclusion>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-sandbox</artifactId>
+    </exclusion>
+ <exclusion>
+      <groupId>xml-apis</groupId>
+      <artifactId>xml-apis</artifactId>
+ </exclusion>    
+    
+			</exclusions>
+			<!-- // TCS AppRemediation Factory Team Changes Ends Here -->
+		</dependency>
+
+        <!-- Managed by parent (no version needed) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+
+
+        <!-- ============================= -->
+        <!-- Dependencies NOT in parent   -->
+        <!-- ============================= -->
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>33.0.0-jre</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
