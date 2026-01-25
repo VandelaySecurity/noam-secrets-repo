@@ -13,3 +13,4 @@ boltons==23.0.0
 halo==0.0.31
 rich-click==1.7.4
 requests==2.31.0
+pygraphblas==5.1.0
